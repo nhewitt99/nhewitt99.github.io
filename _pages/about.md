@@ -2,23 +2,25 @@
 layout: about
 title: about
 permalink: /
-description: <a href="#">Affiliations</a>. Address. Contacts. Moto. Etc.
+description: PhD student in Robotics at <a href="https://robotics.oregonstate.edu/">Oregon State University</a>.
 
 profile:
   align: right
   image: prof_pic.jpg
   address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>336 Rogers Hall</p>
+    <p>2000 NW Monroe Ave</p>
+    <p>Corvallis, OR 97331</p>
 
 news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+A researcher passionate about only two things: anything about computers, and anything completely unrelated to computers.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Current research interests involve multiagent robotic systems that can handle dynamic, uncertain environments, working at the intersection of evolutionary, deep, and reinforcement learning. How can these systems be modeled to easily shape their behaviors? How can they account for unknown unknowns while remaining computationally tractable? What are the limits of a system's ability to adapt to changing environments and goals?
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I am a Robotics PhD student at Oregon State University under the advising of [Dr. Kagan Tumer](http://web.engr.oregonstate.edu/~ktumer/). I received my B.Sc. in Computer Engineering from the University of North Carolina at Charlotte, *summa cum laude*.
+
+(While you're here, did you [contribute to Wikipedia's fundraising](https://donate.wikimedia.org) this year?)

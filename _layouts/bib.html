@@ -34,7 +34,7 @@
               {% endif %}
             {% endfor %}
           {% endif %}
-          
+
           {% if forloop.length == 1 %}
             {% if author_is_self %}
               <em>{{author.last}}, {{author.first}}</em>
@@ -99,7 +99,7 @@
       {% if entry.pdf contains '://' %}
       <a href="{{ entry.pdf }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
       {% else %}
-      <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
+      <a href="{{ entry.pdf | prepend: '/assets/papers/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
       {% endif %}
     {% endif %}
     {% if entry.supp %}
