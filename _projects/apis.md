@@ -1,10 +1,10 @@
 ---
 layout: page
-title: project 4
-description: another without an image
-img:
-importance: 3
-category: fun
+title: human swarm interaction
+description: REU project to develop a low-cost interactive robotic swarm testbed
+img: /assets/img/apis.jpg
+importance: 1
+category: work
 ---
 
 Every project has a beautiful feature showcase page.

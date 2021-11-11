@@ -1,10 +1,10 @@
 ---
 layout: page
-title: project 5
-description: a project with a background image
-img: /assets/img/1.jpg
+title: multipurpose depth pipeline
+description: measuring social distancing from monocular images
+img: /assets/img/mpdp.jpg
 importance: 3
-category: fun
+category: work
 ---
 
 Every project has a beautiful feature showcase page.

@@ -1,9 +1,9 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image
-img: /assets/img/3.jpg
-importance: 2
+title: accumulator lithography
+description: designing a 12-bit accumulator at the silicon level
+img: /assets/img/accum-bit-lay.png
+importance: 4
 category: work
 ---
 
