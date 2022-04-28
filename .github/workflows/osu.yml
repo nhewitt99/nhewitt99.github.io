@@ -26,10 +26,10 @@ jobs:
       - name: SCP files to OSU
         uses: appleboy/scp-action@v0.1.2
         with:
-          host: ${{ secrets.OSU-HOST }}
-          username: ${{ secrets.OSU-USERNAME }}
-          port: ${{ secrets.OSU-PORT }}
-          key: ${{ secrets.OSU-KEY }}
-          passphrase: ${{ secrets.OSU-PASSPHRASE }}
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          port: ${{ secrets.PORT }}
+          key: ${{ secrets.KEY }}
+          passphrase: ${{ secrets.PASSPHRASE }}
           source: "*,!*.md"
           target: "./scp"
