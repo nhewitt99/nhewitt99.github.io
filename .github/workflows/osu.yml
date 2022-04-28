@@ -6,7 +6,7 @@ name: OSU Integration
 on:
   # Triggers the workflow on push or pull request events but only for the compiled branch
   push:
-    branches: [ gh-pages ]
+    branches: [ master ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -23,6 +23,16 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
       
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1.103.0
+        with:
+          ruby-version: '3.0.2'
+          
+      - name: Build site
+        run: bundle exec jekyll build
+        env:
+          JEKYLL_ENV: production
+      
       - name: SCP files to OSU
         uses: appleboy/scp-action@v0.1.2
         with:
@@ -31,5 +41,5 @@ jobs:
           port: ${{ secrets.PORT }}
           key: ${{ secrets.KEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
-          source: "*,!*.md"
+          source: "./_site/*"
           target: "./scp"
