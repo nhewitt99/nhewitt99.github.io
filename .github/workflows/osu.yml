@@ -27,6 +27,7 @@ jobs:
         uses: ruby/setup-ruby@v1.103.0
         with:
           ruby-version: '3.0.2'
+          bundler-cache: true
           
       - name: Build site
         run: bundle exec jekyll build
