@@ -26,7 +26,7 @@ $yellow-color:        #efcc00 !default;
 $grey-color:          #586e75 !default;
 $grey-color-light:    #657b83 !default;
 $grey-color-verylight:    #b0bdc2 !default;
-$grey-color-dark:     #073642 !default;
+$grey-color-dark:     #1c1c1d !default;
 // $grey-color:          #828282 !default;
 // $grey-color-light:    lighten($grey-color, 40%);
 // $grey-color-dark:     darken($grey-color, 25%);
@@ -55,5 +55,5 @@ $solar-green:     #859900;
 
 // Theme colors
 
-$code-bg-color-light:     rgba($purple-color, 0.05);
+$code-bg-color-light:     rgba($solar-cyan, 0.05);
 $code-bg-color-dark:      #2c3237 !default;
