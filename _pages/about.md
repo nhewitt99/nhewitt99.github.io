@@ -8,8 +8,8 @@ profile:
   align: right
   image: prof_pic.jpg
   address: >
-    <p>336 Rogers Hall</p>
-    <p>2000 NW Monroe Ave</p>
+    <p>201 Graf Hall</p>
+    <p>1680 SW Monroe Ave</p>
     <p>Corvallis, OR 97331</p>
 
 news: true  # includes a list of news items
