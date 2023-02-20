@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 description: MS student in Robotics at <a href="https://robotics.oregonstate.edu/">Oregon State University</a>. he/him.
 
