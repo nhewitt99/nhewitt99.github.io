@@ -12,7 +12,7 @@ This was a group final project for my Kinematics, Dynamics, and Control class, d
 
 Path planning algorithms are a rich area of research in robotics, as finding a collision-free path between two points is essential yet combinatorially intractable.
 Such algorithms output a sequence of waypoints that, if followed, would move a robot to a goal point while minimizing some cost (such as time) and satisfying environmental constraints (such as avoiding collisions).
-Because of the massive search space for path planning on robots with many degrees of freedom, stochastic algorithms are often used which can provide convergence guarantees without an exhaustive search.
+Because of the massive search space for path planning on robots with many degrees of freedom, stochastic algorithms are often used which can provide convergence guarantees without an intractable, exhaustive search.
 Randomly-exploring Random Tree (RRT) is one such algorithm commonly used.
 It has many extensions, such as RRT\*, which intelligently rewires its graph of explored configurations to result in shorter trajectories.
 Although ROS has a large library of watertight path planners already made available through MoveIt, our goal was to reimplement RRT and RRT\* from scratch to familiarize ourselves better with the MoveIt bindings.
