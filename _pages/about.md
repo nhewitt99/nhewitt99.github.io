@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-description: MS student in Robotics at <a href="https://robotics.oregonstate.edu/">Oregon State University</a>. he/him.
+description: Developer, roboticist, ML researcher. he/him.
 
 profile:
   align: right
@@ -13,12 +13,23 @@ profile:
     <p>Corvallis, OR 97331</p>
 
 news: true  # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
+I'm a software developer with broad interests in robotics, machine learning, and computer science.
+Passionate about solving messy, meaningful problems.
+Currently open to work: if you have an opening that sounds like this, please reach out!
 
-I am a Robotics MS student at Oregon State University under the advising of [Dr. Kagan Tumer](http://web.engr.oregonstate.edu/~ktumer/). I received my B.Sc. in Computer Engineering from the University of North Carolina at Charlotte, *summa cum laude*.
+I received my M.S. in Robotics at Oregon State University under the advising of [Dr. Kagan Tumer](http://web.engr.oregonstate.edu/~ktumer/).
+I received my B.Sc. in Computer Engineering from the University of North Carolina at Charlotte, *summa cum laude*.
 
-Current research interests involve continuous control in dynamic environments with multiple objectives. I work at the intersection of evolutionary, deep, and reinforcement learning. How can an agent learn in situations where their goals are poorly-defined, or rewards are sparse? How can one learn to make trade-offs on the fly? What are the limits of a system's ability to adapt to changing environments and goals? I'm additionally interested in behavior space representations, neuroplasticity, and socially-conscious design.
+Over five years of collaborative research, I have acquired a wide skillset (check out my [Projects](/projects) to learn more):
+- **Python:** PyTorch, Numpy, Pandas, Matplotlib, Jupyter, Anaconda
+- **Machine learning:** deep, evolutionary, reinforcement
+- **Mathematics:** Bayesian statistics, graph theory, linear algebra
+- **Linux:** networking, services, SSH, basic admin, Docker
+- **Hardware:** UR5, Arduino, depth cameras, embedded C
+- **Robotics:** C++, ROS 1 and 2, SLAM, control
+- **Good development practices:** Git, testing, OOP
 
-I enjoy backpacking, rock climbing, and reading [weird books](https://www.goodreads.com/review/list/141415479-nathan?ref=nav_mybooks&shelf=read). While I have your attention, have you [contributed to Wikipedia's fundraising](https://donate.wikimedia.org) this year?
+I enjoy backpacking, rock climbing, and reading [weird books](https://app.thestorygraph.com/books-read/nhewitt99). While I have your attention, have you [contributed to Wikipedia](https://donate.wikimedia.org) this year?

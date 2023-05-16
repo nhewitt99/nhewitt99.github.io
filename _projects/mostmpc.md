@@ -2,13 +2,13 @@
 layout: page
 title: Multiobjective Manipulator Control
 description: Learning what matters when to complete challenging, sparsely-rewarded manipulation tasks
-# img: /assets/img/apis.jpg
+img: /assets/img/most-mpc-temp.png
 importance: 0
 category: Large
 ---
 
 # Abstract
-This project is the focus of my Master's degree, completed under the advising of Dr. Kagan Tumer at Oregon State University.
+This project was the focus of my Master's degree, completed under the advising of Dr. Kagan Tumer at Oregon State University.
 
 Autonomous robots are a promising technology for fields such as underwater maintenance or marine biological sampling, where existing robotic solutions require skilled and expensive human teleoperators.
 These tasks are extremely challenging for autonomous solutions, in large part because a high level task, such as caching a starfish, encodes many implicit tradeoffs between disparate objectives, such as speed, stability, energy use, and not harming the creature.
@@ -22,5 +22,10 @@ The resulting system can model complex environmental dynamics, generates control
 - Model predictive control
 - Deep learning
 - PyBullet, OpenAI Gym
+
+# Defense
+<div class="h-100 d-flex align-items-center justify-content-center">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/C-FmiNiSQ14" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
 
 :construction: Under Construction! :construction:
