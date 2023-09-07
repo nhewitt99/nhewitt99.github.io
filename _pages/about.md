@@ -7,10 +7,10 @@ description: Developer, roboticist, ML researcher. he/him.
 profile:
   align: right
   image: prof_pic.jpg
-  address: >
-    <p>201 Graf Hall</p>
-    <p>1680 SW Monroe Ave</p>
-    <p>Corvallis, OR 97331</p>
+  # address: >
+  #   <p>201 Graf Hall</p>
+  #   <p>1680 SW Monroe Ave</p>
+  #   <p>Corvallis, OR 97331</p>
 
 news: true  # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
