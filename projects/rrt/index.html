@@ -2,7 +2,7 @@
 <html>
 
   <head>
-    <meta http-equiv="refresh" content="3; url=https://nhewitt99.github.io/" />
+    
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +12,7 @@
   Nathan Hewitt
 
 
-  | Page not found
+  | RRT* in ROS
 
 </title>
 <meta name="description" content="The academic portfolio of Nathan Hewitt. Based on [*folio](https://github.com/bogoli/-folio) design.
@@ -38,7 +38,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌌</text></svg>">
 
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="canonical" href="/404.html">
+<link rel="canonical" href="/projects/rrt/">
 
 <!-- JQuery -->
 <!-- jQuery -->
@@ -174,12 +174,65 @@
       <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Page not found</h1>
-    <p class="post-description">Looks like there has been a mistake. Nothing exists here.</p>
+    <h1 class="post-title">RRT* in ROS</h1>
+    <p class="post-description">Manipulator path planning using the native ROS MoveIt C++ bindings</p>
   </header>
 
   <article>
-    <p>You will be redirected to the main page within 3 seconds. If not redirected, please click <a href="https://nhewitt99.github.io/">here</a>.</p>
+    <h1 id="abstract">Abstract</h1>
+<p>This was a group final project for my Kinematics, Dynamics, and Control class, done with Everardo Gonzalez and Colin Mitchell.</p>
+
+<p>Path planning algorithms are a rich area of research in robotics, as finding a collision-free path between two points is essential yet combinatorially intractable.
+Such algorithms output a sequence of waypoints that, if followed, would move a robot to a goal point while minimizing some cost (such as time) and satisfying environmental constraints (such as avoiding collisions).
+Because of the massive search space for path planning on robots with many degrees of freedom, stochastic algorithms are often used which can provide convergence guarantees without an intractable, exhaustive search.
+Randomly-exploring Random Tree (RRT) is one such algorithm commonly used.
+It has many extensions, such as RRT*, which intelligently rewires its graph of explored configurations to result in shorter trajectories.
+Although ROS has a large library of watertight path planners already made available through MoveIt, our goal was to reimplement RRT and RRT* from scratch to familiarize ourselves better with the MoveIt bindings.
+<em>We successfully implemented RRT and RRT*, incorporated them with the native MoveIt interfaces, and analyzed our implementations’ performance on a Panda Franka model.</em></p>
+
+<h1 id="technologies-used">Technologies Used</h1>
+<ul>
+  <li>ROS, MoveIt</li>
+  <li>C++, Boost</li>
+  <li>Kinematics</li>
+  <li>Graph Theory</li>
+</ul>
+
+<h1 id="results">Results</h1>
+<p>Our completed planners successfully replicated RRT and RRT* and interfaced with the C++ MoveIt bindings.
+This meant that our custom planner could be called through the existing ROS infrastructure, such as setting goals and querying paths interactively in RViz, and used the collision checking and kinematic models available through MoveIt.</p>
+
+<div class="h-100 d-flex align-items-center justify-content-center">
+    <video class="img-fluid rounded z-depth-1" src="/assets/vid/rrt.mp4" autoplay="" loop="">Video of RRT goes here-- try refreshing the page.</video>
+</div>
+<div class="caption">
+    A Panda Franka arm interpolates along a path (pink) found using RRT. The whole graph, composed of points in configuration space, is mapped to task space and visualized in green.
+</div>
+
+<p>The animation above shows an early test of RRT, where a graph was composed with relatively few points and a large maximum connection length in order to result in an uncluttered visual.
+The Panda Franka successfully finds a path from right to left as queried, and we demonstrate it interpolating along this path.
+Below are some results from running RRT* in an environment with obstacles.</p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="/assets/img/arm-onebox-good.png" alt="" title="example image">
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="/assets/img/arm-corridor.png" alt="" title="example image">
+    </div>
+</div>
+<div class="caption">
+    Left, our planner navigates effectively around an obstacle. Right, the planner struggles to find a good path between the corridor formed by two obstacles.
+</div>
+
+<p>Overall, our planner is computationally slower and returns longer paths than the reference implementations from MoveIt.
+This is because the MoveIt implementations draw on a wealth of optimizations and parallelization, while our project followed only the canonical algorithm laid out in the RRT* paper.
+In particular, MoveIt uses better-informed sampling methods, finding solutions even with graphs an order of magnitude smaller than ours.</p>
+
+<p>Additionally, our nodes were found in configuration, not task space, resulting in some unintuitive results.
+Our graphs often would consist of concentric shells with few interconnections, because moving between them would require a large change in configuration space despite their small distance in the task space.
+This can be seen in the failed corridor case above.
+The manipulator must move away from its target in order to reach the closest connection to move inward, before finally moving towards the target along this inner shell.</p>
 
   </article>
 

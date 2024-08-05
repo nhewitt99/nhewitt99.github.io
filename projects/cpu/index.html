@@ -2,7 +2,7 @@
 <html>
 
   <head>
-    <meta http-equiv="refresh" content="3; url=https://nhewitt99.github.io/" />
+    
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +12,7 @@
   Nathan Hewitt
 
 
-  | Page not found
+  | VHDL CPU
 
 </title>
 <meta name="description" content="The academic portfolio of Nathan Hewitt. Based on [*folio](https://github.com/bogoli/-folio) design.
@@ -38,7 +38,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌌</text></svg>">
 
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="canonical" href="/404.html">
+<link rel="canonical" href="/projects/cpu/">
 
 <!-- JQuery -->
 <!-- jQuery -->
@@ -174,12 +174,20 @@
       <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Page not found</h1>
-    <p class="post-description">Looks like there has been a mistake. Nothing exists here.</p>
+    <h1 class="post-title">VHDL CPU</h1>
+    <p class="post-description">Designing a pipelined CPU from scratch, running a subset of the ARM ISA</p>
   </header>
 
   <article>
-    <p>You will be redirected to the main page within 3 seconds. If not redirected, please click <a href="https://nhewitt99.github.io/">here</a>.</p>
+    <h1 id="abstract">Abstract</h1>
+<p>This was a final project for my undergraduate Computer Organization course.
+Using VHDL, a hardware description language, I wrote a pipelined 32-bit CPU entirely from scratch.
+It is a Harvard-style CPU based on a subset of ARMv8, and is capable of running arbitrary programs written in its assembly language.
+There is a supplied demo program that recursively solves for the n’th entry of the Fibonacci sequence.
+The pipelined version lacks hazard detection, requiring NOPs to be manually entered while programming.
+My memory of VHDL has almost completely faded, but this remains one of my favorite undergrad projects.</p>
+
+<h2 id="find-it-on-my-github"><a href="https://github.com/nhewitt99/vhdl-cpu" target="_blank" rel="noopener noreferrer">Find it on my Github!</a></h2>
 
   </article>
 
