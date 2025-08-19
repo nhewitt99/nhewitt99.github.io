@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-description: Developer, roboticist, ML researcher. he/him.
+description: Software engineer and roboticist. he/him.
 
 profile:
   align: right
@@ -16,8 +16,9 @@ news: true  # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
-I'm a software developer with broad interests in robotics, machine learning, and computer science.
+I'm a software engineer with broad interests in mobile robotics, perception, and autonomy.
 Passionate about solving messy, meaningful problems.
+Currently working on bringing smarter robots to active construction sites.
 
 I received my M.S. in Robotics at Oregon State University under the advising of [Dr. Kagan Tumer](http://web.engr.oregonstate.edu/~ktumer/).
 I received my B.Sc. in Computer Engineering from the University of North Carolina at Charlotte, *summa cum laude*.

@@ -6,7 +6,7 @@ title: Nathan Hewitt # the website title (if blank, full name will be used inste
 first_name: Nathan
 middle_name:
 last_name: Hewitt
-email: hewittna@oregonstate.edu
+email: mail@nhewitt.me
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   The academic portfolio of Nathan Hewitt. Based on [*folio](https://github.com/bogoli/-folio) design.
 footer_text: >
