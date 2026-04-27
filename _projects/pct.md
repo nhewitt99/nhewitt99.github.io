@@ -3,7 +3,7 @@ layout: page
 title: PCT Section Hike
 description: Taking a very long walk across Oregon
 img: /assets/img/pct/pack.jpg
-importance: 0
+importance: 20
 category: Large
 ---
 

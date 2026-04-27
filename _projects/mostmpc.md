@@ -3,7 +3,7 @@ layout: page
 title: Multiobjective Manipulator Control
 description: Learning what matters when to complete challenging, sparsely-rewarded manipulation tasks
 img: /assets/img/most-mpc-temp.png
-importance: 0
+importance: 10
 category: Large
 ---
 

@@ -3,7 +3,7 @@ layout: page
 title: Human-Swarm Interaction
 description: REU project to develop a low-cost interactive robotic swarm testbed
 img: /assets/img/apis.jpg
-importance: 20
+importance: 50
 category: Large
 ---
 
