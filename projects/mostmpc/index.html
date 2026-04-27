@@ -2,7 +2,7 @@
 <html>
 
   <head>
-    <meta http-equiv="refresh" content="3; url=https://nhewitt99.github.io/" />
+    
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +12,7 @@
   Nathan Hewitt
 
 
-  | Page not found
+  | Multiobjective Manipulator Control
 
 </title>
 <meta name="description" content="The academic portfolio of Nathan Hewitt. Based on [*folio](https://github.com/bogoli/-folio) design.
@@ -38,7 +38,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌌</text></svg>">
 
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="canonical" href="/404.html">
+<link rel="canonical" href="/projects/mostmpc/">
 
 <!-- JQuery -->
 <!-- jQuery -->
@@ -174,12 +174,33 @@
       <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Page not found</h1>
-    <p class="post-description">Looks like there has been a mistake. Nothing exists here.</p>
+    <h1 class="post-title">Multiobjective Manipulator Control</h1>
+    <p class="post-description">Learning what matters when to complete challenging, sparsely-rewarded manipulation tasks</p>
   </header>
 
   <article>
-    <p>You will be redirected to the main page within 3 seconds. If not redirected, please click <a href="https://nhewitt99.github.io/">here</a>.</p>
+    <h1 id="abstract">Abstract</h1>
+<p>This project was the focus of my Master’s degree, completed under the advising of Dr. Kagan Tumer at Oregon State University.</p>
+
+<p>Autonomous robots are a promising technology for fields such as underwater maintenance or marine biological sampling, where existing robotic solutions require skilled and expensive human teleoperators.
+These tasks are extremely challenging for autonomous solutions, in large part because a high level task, such as caching a starfish, encodes many implicit tradeoffs between disparate objectives, such as speed, stability, energy use, and not harming the creature.
+We propose a system that handles manipulation tasks in an inherently multi-objective framework, rather than compressing a desired behavior into a single signal via scalarization or reward shaping.
+This leverages the intuition that <em>conflict is good</em>; preserving multiple objectives in a system lends adaptivity to a controller, since it can receive rich feedback related to different outcomes as its priorities change.
+The resulting system can model complex environmental dynamics, generates controls that simultaneously optimize potentially-conflicting objectives, and learns “what matters when” to handle the dynamic trade-offs encountered during a robotic deployment.</p>
+
+<h1 id="technologies-used">Technologies Used</h1>
+<ul>
+  <li>Python</li>
+  <li>Multi-objective optimization</li>
+  <li>Model predictive control</li>
+  <li>Deep learning</li>
+  <li>PyBullet, OpenAI Gym</li>
+</ul>
+
+<h1 id="defense">Defense</h1>
+<div class="h-100 d-flex align-items-center justify-content-center">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/C-FmiNiSQ14" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+</div>
 
   </article>
 
